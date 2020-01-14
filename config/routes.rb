@@ -10,6 +10,12 @@ Rails.application.routes.draw do
 
   get 'users/:id', to: "users#show", as: "profile"
 
+  # When the app is instantiated, an instance of Action Cable
+  # will also be created. Action Cable will establish  
+  # a WebSocket connection on localhost:3000/cable,
+  # and begin listening for socket requests on that URI.
+  mount ActionCable.server => '/cable'
+
   resources :chatrooms, param: :slug
   resources :messages
 

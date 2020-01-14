@@ -9,12 +9,15 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+gem 'font-awesome-sass', '~> 5.11.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5.x'
-
+gem 'bootstrap-sass'
+gem 'sass-rails'
 gem 'jbuilder', '~> 2.0'
 
-
+# Style
+gem 'rubocop'
 
 # Use Redis adapter to run Action Cable in production
 gem 'redis', '~> 3.0'

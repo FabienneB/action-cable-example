@@ -4,11 +4,10 @@
     <h2 id="log-in-title">Sign up</h2>
     <div class="auth-form well">
     <%= form_for(User.new, url: signup_path) do |f| %>
-
-      <%=f.label :name%>
+      <%= f.label :username%>
       <div class="input-group">
         <span class="input-group-addon">@</span>
-          <%= f.text_field :name, class: "form-control"%>
+          <%= f.text_field :username, class: "form-control"%>
       </div>
 
       <div class="actions">
